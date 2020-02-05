@@ -18,7 +18,7 @@ FilesPath = "/Users/WhoAmI/Firewall/Scores/Here/" # path that stores the reports
 ### Create list with all the csv available files
 ScoreFiles = glob.glob(FilesPath + "*.txt")
 if len(ScoreFiles) == 0:
-   print "ERROR: Files were not found."
+   print ("ERROR: Files were not found.")
 
 ### Open, parse, and create new files
 for files in ScoreFiles:
@@ -36,6 +36,6 @@ for files in ScoreFiles:
 ### Validate Created Files
 CSVFiles = glob.glob(FilesPath + "*.csv")
 if len(ScoreFiles) == len(CSVFiles) and len(ScoreFiles) > 0:
-   print "Done. Files were processed."
+   print ("Done. Files were processed.")
 else:
-   print "WARNING: The amount of .csv and .txt files is not the same. You might want to check the output files."
+   print ("WARNING: The amount of .csv and .txt files is not the same. You might want to check the output files.")

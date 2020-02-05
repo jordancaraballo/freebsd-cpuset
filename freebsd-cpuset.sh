@@ -2,6 +2,7 @@
 # Script for FreeBSD that lets the user set interrupt loads to a specific amount of cores,
 # or to balance the load to a specific cpu. This will take the amount of cpu's available
 # in your system and set interrupts to your desired amount.
+# Find driver: sysctl -a | grep irq | grep $your_nic 
 # Authors: Jordan A. Caraballo-Vega, John Jasen
 # Precursor: Navdeep Parhar
 

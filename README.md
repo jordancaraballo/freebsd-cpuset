@@ -1,5 +1,5 @@
 # freebsd-cpuset
-Bash script to balance FreeBSD interrupts using the cpuset tool
+Bash script to balance FreeBSD interrupts using the cpuset tool.
 
 For multiprocessor (SMP) systems, FreeBSD has the cpuset command to adjust which CPUs a process will use.
 
